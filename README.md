@@ -65,8 +65,11 @@ Update the initial Diagram “as needed/if needed” to better describe your ove
 ## Reasoning
 The AWS S3 data lake serves as a cheap cloud storage option for raw and tranformed data.
 Snowflakes Data Warehouse is optimal for storing cleaned data ready for analytics and reports.
+The final dimension and fact table format of the data in Snowflake expidites the querying process and organization.
 This ETL pipeline is the simple but optimal for Sparkify's end goal. The transformations are agnostic
 to the storage options, should Sparkify decide to migrate to other cloud options, this pipeline generally holds true.
+
+
 
 ## Process
 The raw data stored in S3 is transformed and enriched using apache pyspark, then lands in an S3 bucket. From there Snowflake pulls the
