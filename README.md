@@ -60,7 +60,7 @@ CREATE OR REPLACE TRANSIENT TABLE TECHCATALYST_DE.BCOMBS.ARTIST_DIM (
 Update the initial Diagram “as needed/if needed” to better describe your overall solution architecture
 
 ## ETL Architecture Diagram
-![]
+![ETL Architecture Diagram](SparkifyETL.jpg)
 
 Discuss the purpose of the Data Lake, and Data Warehouse in context of the startup, Sparkify, and their analytical goals.
 State and justify your database schema design and ETL pipeline.
