@@ -62,7 +62,12 @@ Update the initial Diagram “as needed/if needed” to better describe your ove
 ## ETL Architecture Diagram
 ![ETL Architecture Diagram](SparkifyETL.jpg)
 
-Discuss the purpose of the Data Lake, and Data Warehouse in context of the startup, Sparkify, and their analytical goals.
-State and justify your database schema design and ETL pipeline.
-Summarize your process
-[Optional] Provide example queries and results for song play analysis.
+## Explaination
+The AWS S3 data lake serves as a cheap cloud storage option for raw and tranformed data.
+Snowflakes Data Warehouse is optimal for storing cleaned data ready for analytics and reports.
+This ETL pipeline is the simple but optimal for Sparkify's end goal. The transformations are agnostic
+to the storage options, should Sparkify decide to migrate to other cloud options, this pipeline generally holds true.
+
+The raw data stored in S3 is transformed and enriched using apache pyspark, then lands in an S3 bucket. From there Snowflake pulls the
+transformed data in S3 whre it can be stored in tables and be easily queried.
+
