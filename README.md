@@ -8,7 +8,7 @@ ETL Pipeline for Sparkify Snowflake Database
 The AWS S3 data lake serves as a cheap cloud storage option for raw and tranformed data.
 Snowflakes Data Warehouse is optimal for storing cleaned data ready for analytics and reports.
 The final dimension and fact table format of the data in Snowflake expidites the querying process and organization.
-This ETL pipeline is the simple but optimal for Sparkify's end goal. The transformations are agnostic
+This ETL pipeline is the simple but optimal for Sparkify's end goal. The transformations in PySpark are agnostic
 to the storage options, should Sparkify decide to migrate to other cloud options, this pipeline generally holds true.
 
 ## Process
